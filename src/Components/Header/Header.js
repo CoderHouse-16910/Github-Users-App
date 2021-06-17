@@ -3,15 +3,19 @@ import './Header.css';
 // Imagen
 import image from '../Header/github-logo-white.png';
 
-function Header() {
-  return (
-    <div className="Header">
-      <h2>
-        <img src={image} alt="logo-github" width="200px" />
-      </h2>
-      <h1>API GITHUB</h1>
-    </div>
-  );
+function Header({ title }) {
+	return (
+		<div className='Header'>
+			<h2>
+				<img src={image} alt='logo-github' width='200px' />
+			</h2>
+			<h1>{title}</h1>
+		</div>
+	);
 }
+
+Header.defaultProps = {
+	title: 'API Github',
+};
 
 export default Header;

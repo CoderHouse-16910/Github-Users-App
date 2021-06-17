@@ -4,12 +4,12 @@ import Header from './Components/Header/Header';
 import CardContainer from './Components/CardContainer/CardContainer';
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
-      <CardContainer />
-    </div>
-  );
+	return (
+		<div>
+			<Header />
+			<CardContainer />
+		</div>
+	);
 }
 
 export default App;
